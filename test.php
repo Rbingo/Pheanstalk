@@ -4,7 +4,18 @@
 
 include './vendor/autoload.php';
 
-$pheanstalk = new Pheanstalk('127.0.0.1');
+use Pheanstalk\Pheanstalk;
+
+try {
+    $pheanstalk = new Pheanstalk('127.0.0.1');
+} catch (Exception $e) {
+    echo 222;
+    var_dump($e);
+    die;
+}
+//var_dump($pheanstalk->getConnection()->isServiceListening());
+echo 111;die;
+
 
 // ----------------------------------------
 // producer (queues jobs)

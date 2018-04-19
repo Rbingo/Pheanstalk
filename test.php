@@ -9,9 +9,9 @@ $pheanstalk = new Pheanstalk('127.0.0.1');
 // ----------------------------------------
 // producer (queues jobs)
 
-$pheanstalk
+/*$pheanstalk
     ->useTube('testtube')
-    ->put("job payload goes here\n");
+    ->put("job payload goes here\n");*/
 
 // ----------------------------------------
 // worker (performs jobs)

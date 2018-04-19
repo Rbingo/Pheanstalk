@@ -4,7 +4,7 @@
 
 include './vendor/autoload.php';
 
-$pheanstalk = new Pheanstalk('111.230.36.202');
+$pheanstalk = new Pheanstalk('127.0.0.1');
 
 // ----------------------------------------
 // producer (queues jobs)
